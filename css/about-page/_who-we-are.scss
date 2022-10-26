@@ -1,0 +1,76 @@
+.who_we_are {
+    width: 100%;
+    position: relative;
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 0;
+        gap: 40px;
+
+        .left_image {
+            width: 100%;
+            max-width: 580px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+
+        .right_info {
+            width: 100%;
+            max-width: 600px;
+
+            h2,
+            p:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .card_items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 0 100px;
+
+        .card_content {
+            padding: 32px;
+            border-radius: 12px;
+            background: $secondaryColor;
+
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        width: 20%;
+        right: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top_shape {
+        top: 0;
+    }
+
+    .bottom_shape {
+        width: 15%;
+        transform: scaleX(-1);
+        bottom: 26%;
+    }
+}

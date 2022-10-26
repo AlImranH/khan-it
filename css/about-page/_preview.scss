@@ -1,0 +1,94 @@
+.preview {
+    width: 100%;
+    padding: 100px 0;
+
+    .content {
+        width: 100%;
+
+        .top {
+            max-width: 1100px;
+            margin-bottom: 60px;
+        }
+
+        .preview_items {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            gap: 20px;
+
+            .image {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #F3F3F4;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: .25s;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 16px;
+                    transition: .25s;
+                }
+
+                &:hover {
+                    img {
+                        height: 105%;
+                    }
+                }
+            }
+
+            .image:nth-child(1) {
+                grid-column: 1/5;
+                grid-row: 1/5;
+            }
+
+            .image:nth-child(2) {
+                grid-column: 5/9;
+                grid-row: 1/7;
+            }
+
+            .image:nth-child(3) {
+                grid-column: 9/17;
+                grid-row: 1/5;
+            }
+
+            .image:nth-child(4) {
+                grid-column: 1/5;
+                grid-row: 5/11;
+            }
+
+            .image:nth-child(5) {
+                grid-column: 5/9;
+                grid-row: 7/11;
+            }
+
+            .image:nth-child(6) {
+                grid-column: 9/13;
+                grid-row: 5/11;
+            }
+
+            .image:nth-child(7) {
+                grid-column: 13/17;
+                grid-row: 5/9;
+            }
+
+            .image:nth-child(8) {
+                grid-column: 1/5;
+                grid-row: 11/15;
+            }
+
+            .image:nth-child(9) {
+                grid-column: 5/13;
+                grid-row: 11/15;
+            }
+
+            .image:nth-child(10) {
+                grid-column: 13/17;
+                grid-row: 9/15;
+            }
+        }
+    }
+}

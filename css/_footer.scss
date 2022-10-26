@@ -1,0 +1,97 @@
+footer {
+    width: 100%;
+    padding: 100px 0 0px;
+    background: #080829;
+    position: relative;
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 206px;
+        padding-bottom: 60px;
+
+
+        .brand_id {
+            margin-bottom: 16px;
+            opacity: 1;
+        }
+
+        p,
+        a {
+            color: #fff;
+            opacity: .7;
+        }
+
+        .social_links {
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+
+            a {
+                width: 36px;
+                height: 36px;
+                border: 1px solid $textColor;
+                text-align: center;
+                line-height: 36px;
+                border-radius: 50%;
+                font-size: 15px;
+                color: $textColor;
+                opacity: 1;
+                transition: .3s;
+
+                &:hover {
+                    border-color: $primaryColor;
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        h3 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 16px;
+        }
+
+        .contact_items,
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            a {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: .3s;
+
+                &:hover {
+                    color: $primaryColor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .bottom_copyright {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+        a {
+            transition: .3s;
+
+            &:hover {
+                color: $primaryColor;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.about {
+    width: 100%;
+    padding: 140px 0;
+    position: relative;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        .left_image {
+            width: 100%;
+            max-width: 630px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right_info {
+            width: 100%;
+            max-width: 560px;
+
+            .about_info {
+
+                h2,
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .about_brand {
+                padding-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                column-gap: 30px;
+                row-gap: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        width: 20%;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}

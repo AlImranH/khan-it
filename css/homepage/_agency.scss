@@ -1,0 +1,42 @@
+.agency {
+    width: 100%;
+    padding: 140px 0;
+    background: $secondaryColor;
+
+    .content {
+        h2 {
+            text-align: center;
+            max-width: 810px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        .box_items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .box_content {
+                background: #fff;
+                padding: 32px;
+                border-radius: 16px;
+
+                .icon {
+                    width: 52px;
+                    margin-bottom: 14px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}

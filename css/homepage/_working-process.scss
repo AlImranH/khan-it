@@ -1,0 +1,95 @@
+.working_process {
+    width: 100%;
+    position: relative;
+    background: url(../../images/homepage/working-process-image.png) #F3F3F4;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30%, cover;
+    padding: 140px 0;
+
+    .shape {
+        position: absolute;
+        width: 20%;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // .image {
+    //     width: 37%;
+    //     height: 900px;
+
+    //     img {
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //         object-position: right;
+    //     }
+    // }
+
+    .content {
+        width: 65%;
+        margin-left: auto;
+        // margin-top: -50%;
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        .box_items {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            gap: 30px;
+
+
+            .box_content {
+                padding: 24px;
+                background: #FFFFFF;
+                border-radius: 12px;
+
+                h5 {
+                    color: $primaryColor;
+                    margin-bottom: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+
+                p {
+                    margin-top: 12px;
+                }
+
+            }
+
+            .box_content:nth-child(1) {
+                grid-column: 1/12;
+            }
+
+            .box_content:nth-child(2) {
+                grid-column: 1/6;
+                grid-row: 2/4;
+            }
+
+            .box_content:nth-child(3) {
+                grid-column: 6/12;
+            }
+
+            .box_content:nth-child(4) {
+                grid-column: 6/12;
+            }
+        }
+
+        .image_mobile {
+            display: none;
+        }
+    }
+}

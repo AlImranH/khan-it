@@ -1,0 +1,85 @@
+.home_landing_section {
+    background: url(../../images/homepage/slider-bg.png);
+    background-position: right;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+}
+
+.homepage {
+    footer {
+        padding-top: 180px;
+    }
+}
+
+// Home page all section import*************
+/* ******************** Slider section STYLING START ******************** */
+@import "slider-section";
+/* ******************** Slider section STYLING END ******************** */
+
+/* ******************** Customer section STYLING START ******************** */
+@import "customer";
+/* ******************** Customer section STYLING END ******************** */
+
+/* ******************** The Numbers section STYLING START ******************** */
+@import "the-numbers";
+/* ******************** The Numbers section STYLING END ******************** */
+
+/* ******************** About Faruk section STYLING START ******************** */
+@import "about";
+/* ******************** About Faruk section STYLING END ******************** */
+
+/* ******************** Ranking section STYLING START ******************** */
+@import "ranking";
+/* ******************** Ranking section STYLING END ******************** */
+
+/* ******************** Client review section STYLING START ******************** */
+@import "client-review";
+/* ******************** Client review section STYLING END ******************** */
+
+/* ******************** Working Process section STYLING START ******************** */
+@import "working-process";
+/* ******************** Working Process section STYLING END ******************** */
+
+/* ******************** Tips section STYLING START ******************** */
+@import "tips";
+/* ******************** Tips section STYLING END ******************** */
+
+/* ******************** Agency section STYLING START ******************** */
+@import "agency";
+/* ******************** Agency section STYLING END ******************** */
+
+/* ******************** FAQ section STYLING START ******************** */
+@import "faq";
+/* ******************** FAQ section STYLING END ******************** */
+
+/* ******************** Blog section STYLING START ******************** */
+@import "blog";
+/* ******************** Blog section STYLING END ******************** */
+
+.bottom_client {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 50%);
+
+    .content {
+        background: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(102px, 1fr));
+        align-items: center;
+        column-gap: 50px;
+        border-radius: 24px;
+        padding: 0 50px;
+
+        .image {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
