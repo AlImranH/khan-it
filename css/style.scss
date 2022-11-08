@@ -3,6 +3,14 @@
 
 @import "color";
 
+:root {
+  --change: 0px;
+  --animationSpeeds1: 0s;
+  --animationSpeeds2: 0s;
+  --animationSpeeds3: 0s;
+}
+
+
 /* ******************** GLOBAL STYLING START ******************** */
 * {
   margin: 0;
@@ -237,7 +245,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../images/homepage/free-audit-bg.png) $secondaryColor;
+  background: url(../images/homepage/free-audit-bg.png) $secondaryColor;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,6 +312,14 @@ h2 {
 /* ******************** CONTACT PAGE STYLING START ******************** */
 @import "contact-page/contact";
 /* ******************** CONTACT PAGE STYLING END ******************** */
+
+/* ******************** BLOG PAGE STYLING START ******************** */
+@import "blog-page/blog";
+/* ******************** BLOG PAGE STYLING END ******************** */
+
+/* ******************** PROFILE PAGE STYLING START ******************** */
+@import "profile";
+/* ******************** PROFILE PAGE STYLING END ******************** */
 
 /* ******************** ANIMATION STYLING START ******************** */
 @import "animations";

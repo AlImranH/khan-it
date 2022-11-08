@@ -557,6 +557,45 @@
     .popup .content h2 {
         text-align: center;
     }
+
+    .popup_active {
+        padding-right: 0px;
+    }
+
+    .popup .content {
+        width: calc(100vw - 40px);
+    }
+
+    .video_popup .content .form_layout .popup_body video {
+        border-radius: 8px;
+    }
+
+    header nav .nav_links>li>.has_submenu {
+        width: max-content;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        padding: 0px 0 0 20px;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: 0.3s;
+        width: 80%;
+    }
+
+    .profile_content .content {
+        grid-template-columns: 1fr;
+    }
+
+    .blog_single_content .content {
+        grid-template-columns: 1fr;
+    }
+
+    .blog_single_content .content .left_sidebar,
+    .blog_single_content .content .right_sidebar {
+        position: static;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -584,6 +623,18 @@
         .image {
             grid-column: unset !important;
             grid-row: unset !important;
+        }
+    }
+
+    .blog_listing .blog_card {
+        flex-direction: column;
+    }
+
+    .blog_listing .blog_card .image {
+        max-width: 100%;
+
+        img {
+            width: 100%;
         }
     }
 }
@@ -682,6 +733,17 @@
     .our_team .content .team_items .team_card .image {
         height: 350px;
     }
+
+    .profile_content .content .left_information .user_info,
+    .profile_content .content .left_information .bg_dark,
+    .profile_content .content .right_information {
+        padding: 20px;
+    }
+
+    .profile_content .content .left_information .bg_dark .language ul li,
+    .profile_content .content .right_information .skill ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -711,5 +773,15 @@
 
     .bottom_client .content .image:not(:first-child) {
         margin-top: -20%;
+    }
+
+    .profile_content .content .left_information .user_info,
+    .profile_content .content .left_information .bg_dark,
+    .profile_content .content .right_information {
+        padding: 20px;
+    }
+
+    .profile_content .container {
+        padding: 0;
     }
 }

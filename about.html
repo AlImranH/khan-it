@@ -76,8 +76,18 @@
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
                     <li><a class="active" href="about.html">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li>
+                        <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="has_submenu">
+                            <ul class="submenu_links">
+                                <li><a href="#">Search Engine Optimization</a></li>
+                                <li><a href="#">Social Media Marketing</a></li>
+                                <li><a href="#">Content Marketing</a></li>
+                                <li><a href="#">Web Design</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="blog-list.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <a href="tel:01708590337" class="num_btn btn">
@@ -85,8 +95,7 @@
                         xmlns="http://www.w3.org/2000/svg">
                         <path id="call"
                             d="M15.2008 9.83331C15.0175 9.83331 14.8258 9.77497 14.6425 9.73331C14.2712 9.65149 13.9064 9.54287 13.5508 9.40831C13.1642 9.26766 12.7393 9.27497 12.3577 9.42881C11.9762 9.58265 11.6651 9.87217 11.4841 10.2416L11.3008 10.6166C10.4892 10.1651 9.7433 9.60433 9.08415 8.94997C8.42979 8.29082 7.869 7.54497 7.41748 6.7333L7.76748 6.49997C8.13695 6.31907 8.42647 6.00791 8.58031 5.62638C8.73415 5.24485 8.74146 4.8199 8.60082 4.4333C8.4685 4.07699 8.35993 3.7123 8.27582 3.34164C8.23415 3.1583 8.20082 2.96664 8.17582 2.77497C8.07462 2.18799 7.76717 1.65642 7.30883 1.276C6.8505 0.895585 6.2714 0.691312 5.67582 0.699971H3.17582C2.81668 0.696599 2.46102 0.770649 2.13307 0.91708C1.80512 1.06351 1.51257 1.27888 1.27534 1.54854C1.03811 1.81819 0.861762 2.1358 0.758306 2.47973C0.654851 2.82367 0.626716 3.18585 0.675816 3.54164C1.11976 7.03279 2.71417 10.2765 5.20719 12.7605C7.70021 15.2445 10.9497 16.8271 14.4425 17.2583H14.7591C15.3737 17.2592 15.967 17.0337 16.4258 16.625C16.6895 16.3892 16.9001 16.1001 17.0437 15.7769C17.1874 15.4537 17.2608 15.1037 17.2591 14.75V12.25C17.2489 11.6711 17.0382 11.1138 16.6628 10.673C16.2874 10.2323 15.7707 9.93549 15.2008 9.83331ZM15.6175 14.8333C15.6173 14.9516 15.592 15.0686 15.5431 15.1763C15.4943 15.2841 15.423 15.3802 15.3342 15.4583C15.2413 15.5391 15.1325 15.5995 15.0147 15.6354C14.897 15.6713 14.773 15.6819 14.6508 15.6666C11.5299 15.2665 8.63101 13.8387 6.41141 11.6085C4.19181 9.37838 2.77782 6.47275 2.39248 3.34997C2.37922 3.2279 2.39084 3.10441 2.42665 2.98696C2.46246 2.86951 2.52171 2.76054 2.60082 2.66664C2.67891 2.57775 2.77503 2.50651 2.8828 2.45765C2.99056 2.4088 3.1075 2.38345 3.22582 2.3833H5.72582C5.9196 2.37899 6.10884 2.44237 6.26094 2.56253C6.41304 2.68269 6.51849 2.85211 6.55915 3.04164C6.59248 3.26942 6.63415 3.49442 6.68415 3.71664C6.78042 4.15593 6.90853 4.58762 7.06748 5.00831L5.90082 5.54997C5.80106 5.59574 5.71133 5.66076 5.63678 5.7413C5.56223 5.82184 5.50432 5.91632 5.46638 6.0193C5.42843 6.12228 5.41121 6.23175 5.41569 6.34141C5.42017 6.45107 5.44627 6.55876 5.49248 6.6583C6.69182 9.22727 8.75685 11.2923 11.3258 12.4916C11.5287 12.575 11.7563 12.575 11.9592 12.4916C12.0631 12.4545 12.1586 12.397 12.2401 12.3226C12.3217 12.2482 12.3876 12.1584 12.4342 12.0583L12.9508 10.8916C13.3816 11.0457 13.8213 11.1737 14.2675 11.275C14.4897 11.325 14.7147 11.3666 14.9425 11.4C15.132 11.4406 15.3014 11.5461 15.4216 11.6982C15.5417 11.8503 15.6051 12.0395 15.6008 12.2333L15.6175 14.8333Z" />
-                    </svg>01708590337
-                </a>
+                    </svg>01708590337</a>
 
                 <div class="burger_menu">
                     <span class="line line1"></span>
@@ -190,7 +199,7 @@
                             </div>
                             <img src="images/about-page/team-1.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Chairman</p>
                                 <h3>Wade Warren</h3>
@@ -208,7 +217,7 @@
                             </div>
                             <img src="images/about-page/team-2.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>CEO</p>
                                 <h3>Esther Howard</h3>
@@ -226,7 +235,7 @@
                             </div>
                             <img src="images/about-page/team-3.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Director</p>
                                 <h3>Robert Fox</h3>
@@ -244,7 +253,7 @@
                             </div>
                             <img src="images/about-page/team-4.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Lead Developer</p>
                                 <h3>Cody Fisher</h3>
@@ -262,7 +271,7 @@
                             </div>
                             <img src="images/about-page/team-5.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Lead Designer</p>
                                 <h3>Devon Lane</h3>
@@ -280,7 +289,7 @@
                             </div>
                             <img src="images/about-page/team-6.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Admin</p>
                                 <h3>Floyd Miles</h3>
@@ -298,7 +307,7 @@
                             </div>
                             <img src="images/about-page/team-7.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>SEO Expert</p>
                                 <h3>Theresa Webb</h3>
@@ -316,7 +325,7 @@
                             </div>
                             <img src="images/about-page/team-8.png" alt="Team Member">
                         </div>
-                        <a href="#" class="info">
+                        <a href="profile.html" class="info">
                             <div>
                                 <p>Content Writer</p>
                                 <h3>Arlene McCoy</h3>
@@ -437,7 +446,6 @@
     <!-- ********************** Footer SECTION END ********************** -->
 
     <!-- JavaScript File Link -->
-    <script src="plugins/video-slider/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>

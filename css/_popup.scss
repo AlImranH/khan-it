@@ -87,8 +87,6 @@
                     color: #db1c1c;
                 }
             }
-
-
         }
 
         .popup_body {
@@ -181,6 +179,53 @@
     .show {
         display: block !important;
     }
+}
+
+.video_popup {
+    .close_btn {
+        i {
+            cursor: pointer;
+            transition: 0.3s;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 28px;
+            z-index: 999999;
+            color: #fff;
+
+            &:hover {
+                color: #db1c1c;
+            }
+        }
+    }
+
+    .content {
+        .extra_height {
+            display: none;
+        }
+
+        .form_layout {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 0;
+            background: transparent;
+
+            .popup_body {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                video {
+                    width: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+
+
 }
 
 .popup_open {

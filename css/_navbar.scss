@@ -25,11 +25,58 @@ header {
       justify-content: space-between;
       padding: 0 30px;
 
-      a {
-        transition: 0.3s;
+      >li {
+        position: relative;
+        transition: .3s;
+
+        a {
+          transition: 0.3s;
+
+          i {
+            margin-left: 3px;
+            font-size: 16px;
+            transition: .3s;
+          }
+        }
+
+        >.has_submenu {
+          width: max-content;
+          position: absolute;
+          background: #fff;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+          padding: 30px;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: .3s;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li:hover {
+              >a {
+                color: $primaryColor;
+              }
+            }
+          }
+        }
 
         &:hover {
-          color: $primaryColor;
+          >a {
+            color: $primaryColor;
+
+            i {
+              transform: rotate(-180deg);
+            }
+          }
+
+          .has_submenu {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
+          }
         }
       }
     }
