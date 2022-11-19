@@ -24,6 +24,30 @@
             }
         }
 
+        .bar.average {
+            width: 100%;
+
+            .inner {
+                width: 50%;
+            }
+        }
+
+        .bar.good {
+            width: 100%;
+
+            .inner {
+                width: 75%;
+            }
+        }
+
+        .bar.excellent {
+            width: 100%;
+
+            .inner {
+                width: 100%;
+            }
+        }
+
         .left_information {
             width: 100%;
 
@@ -296,6 +320,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.service_single_page {
+    .service_single_content {
+        .content {
+            grid-template-columns: 4fr 1fr;
         }
     }
 }

@@ -1665,6 +1665,24 @@ header.active nav {
   top: 0;
   left: 0;
 }
+.profile_content .content .bar.average {
+  width: 100%;
+}
+.profile_content .content .bar.average .inner {
+  width: 50%;
+}
+.profile_content .content .bar.good {
+  width: 100%;
+}
+.profile_content .content .bar.good .inner {
+  width: 75%;
+}
+.profile_content .content .bar.excellent {
+  width: 100%;
+}
+.profile_content .content .bar.excellent .inner {
+  width: 100%;
+}
 .profile_content .content .left_information {
   width: 100%;
 }
@@ -1883,6 +1901,10 @@ header.active nav {
 }
 .profile_content .content .right_information .skill ul li .bar {
   background: #d8d8d8;
+}
+
+.service_single_page .service_single_content .content {
+  grid-template-columns: 4fr 1fr;
 }
 
 /* ******************** PROFILE PAGE STYLING END ******************** */
@@ -2724,7 +2746,7 @@ header.active nav .nav_menu_active {
     grid-template-columns: 1fr;
   }
   .blog_single_content .content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .blog_single_content .content .left_sidebar,
 .blog_single_content .content .right_sidebar {

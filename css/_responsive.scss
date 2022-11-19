@@ -588,7 +588,7 @@
     }
 
     .blog_single_content .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .blog_single_content .content .left_sidebar,
